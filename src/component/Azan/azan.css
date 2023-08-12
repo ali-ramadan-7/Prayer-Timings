@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+}
+
+body {
+  direction: rtl;
+  background-image: url(../../image/bg.jpg);
+  background-size: cover;
+  min-height: 1100ox;
+  font-family: "Work Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Cairo", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Reem Kufi", sans-serif;
+}
+
+.all {
+  margin: 10px 30px;
+  height: 100vh;
+}
+.all .city {
+  font-size: 30px;
+  color: red;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.boxs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+}
+.boxs .box {
+  background: linear-gradient(60deg, rgba(139, 247, 253, 0.294), rgba(0, 170, 255, 0.164));
+  position: relative;
+  height: 220px;
+  box-shadow: 0 0 10px rgba(0, 45, 117, 0.521) inset, 0 0 10px black, -5px 10px 20px rgba(0, 30, 79, 0.323) inset;
+  display: flex;
+  justify-content: center;
+}
+.boxs .box::before {
+  content: "";
+  border: 2px solid rgba(253, 213, 139, 0.267);
+  width: 97%;
+  position: absolute;
+  top: 60px;
+  left: 1px;
+  height: 0;
+}
+.boxs .box p {
+  color: white;
+  position: absolute;
+}
+.boxs .box :first-child {
+  top: 5px;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.boxs .box :last-child {
+  top: 100px;
+  font-size: 40px;
+}
+.boxs .box :last-child span {
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 20px;
+  }
+}
+select {
+  width: 200px;
+  margin: 30px;
+  padding: 10px;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  background-color: rgba(0, 30, 79, 0.323);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0 0 2px rgba(0, 45, 117, 0.521) inset, 0 0 2px black, -1px 2px 5px rgba(0, 30, 79, 0.323) inset;
+}/*# sourceMappingURL=azan.css.map */
