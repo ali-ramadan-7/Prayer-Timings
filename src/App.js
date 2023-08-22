@@ -1,11 +1,11 @@
 import './App.css';
-import Azan from './component/Azan/azan';
+import Box from './component/Azan/box';
 
 
 function App() {
   return (
     <div className="App">
-    <Azan/>
+    <Box/>
     </div>
   );
 }
