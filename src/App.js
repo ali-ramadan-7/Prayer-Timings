@@ -1,5 +1,5 @@
 import './App.css';
-import Box from './component/Azan/box';
+import Box from './component/Azan/MainBox';
 
 
 function App() {
